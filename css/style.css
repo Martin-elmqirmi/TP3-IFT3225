@@ -1,0 +1,139 @@
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#login-form{
+    padding: 5%;
+    border-radius: 20px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+#login-form h3{
+    text-align: center;
+    color: #333;
+}
+#register-form{
+    padding: 5%;
+    background: #71dd8a;
+    border-radius: 20px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+#register-form h3{
+    text-align: center;
+    color: #fff;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+#login-form .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: #71dd8a;
+}
+#register-form .btnSubmit{
+    font-weight: 600;
+    color: #71dd8a;
+    background-color: #fff;
+}
+#register-form{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+#login-form{
+    color: #71dd8a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#spinner {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: none;
+}
+
+body.loading #spinner {
+    display: block;
+}
+
+.error-message {
+    color: #8e0000;
+    margin: 10px 0;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.bg-green {
+    background-color: #71dd8a;
+}
+
+.text-green {
+    color: #71dd8a;
+    text-decoration: none;
+}
+
+/*    CSS Timer   */
+.base-timer {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.base-timer__svg {
+    transform: scaleX(-1);
+}
+
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+}
+
+.base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+    color: limegreen;
+}
+
+.base-timer__path-remaining.orange {
+    color: orange;
+}
+
+.base-timer__path-remaining.red {
+    color: red;
+}
+
+.base-timer__label {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.timer {
+    position: center;
+}
